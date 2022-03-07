@@ -1,0 +1,461 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\lib\signalr\signalr.js" />
+    <Content Remove="wwwroot\lib\signalr\signalr.js.map" />
+    <Content Remove="wwwroot\lib\signalr\signalr.min.js" />
+    <Content Remove="wwwroot\lib\signalr\signalr.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\alert\alert.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\alert\alert2.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\alert\alert3.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\alert\alert4.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\alert\alert5.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\alert\alert6.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\alert\alert7.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\alert\model.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\alert\model2.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\alert\model3.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\angular-templates.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\active-bg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\active-bg.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\beauty.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\error-bg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\img5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\img5.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\login-register.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\megamenubg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\nyan-cat.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\profile-bg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\sidebarbg.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\socialbg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\Thumbs.db" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\user-bg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\user-info.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\background\weatherbg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\auth-bg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\auth-bg2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\d2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\icon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\img2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\img3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\img4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\img5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\img6.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\big\Thumbs.db" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\bootstrap-templates.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\browser\chrome-logo.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\browser\edge-logo.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\browser\firefox-logo.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\browser\internet-logo.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\browser\netscape-logo.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\browser\opera-logo.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\browser\photoshop.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\browser\safari-logo.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\browser\sketch.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\custom-select.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\docs\gulp.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\favicon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\gallery\chair.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\gallery\chair2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\gallery\chair3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\gallery\chair4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\img2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\img3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\banne-img.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\banner-bg.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\brand-logos.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\db.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\f1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\f2.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\f3.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\favicon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\icon-sprite.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\img2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\img3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\logo.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\logos.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\right-img.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\section-bg.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\landingpage\section-img.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\logo-icon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\logo-light-text.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\logo-text.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\product\chair.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\product\chair2.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\product\chair3.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\product\chair4.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\product\ipad.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\product\iphone.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\product\iwatch.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\product\p1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\product\p2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\product\p3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\product\p4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\rating\cancel-off.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\rating\cancel-on.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\rating\heart.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\rating\like.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\rating\star-half-mono.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\rating\star-half.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\rating\star-off.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\rating\star-on.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\react-templates.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\tooltip\Euclid.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\tooltip\shape1.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\tooltip\shape2.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\tooltip\shape3.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\tooltip\tooltip1.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\tooltip\tooltip2.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\tooltip\tooltip3.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\1-old.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\2.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\3.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\6.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\7.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\8.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\agent.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\agent2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\d1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\d2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\d3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\d4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\d5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\profile-pic-2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\profile-pic.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\profile.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\widget-table-pic1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\widget-table-pic2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\widget-table-pic3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\users\widget-table-pic4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\widgets\1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\widgets\2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\widgets\3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\widgets\widget-carousel-2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\assets\images\widgets\widget-carousel.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Bold.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Bold.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Bold.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Bold.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Bold.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Heavy.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Heavy.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Heavy.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Heavy.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Heavy.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Medium.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Medium.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Medium.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Medium.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Medium.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Regular.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Regular.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Regular.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Regular.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\Gilmer-Regular.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Book.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Book.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Book.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Book.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Book.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Medium.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Medium.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Medium.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Medium.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Medium.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Regular.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Regular.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Regular.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Regular.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\fonts\TofinoPersonal-Regular.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\css\fa-brands.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\css\fa-brands.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\css\fa-regular.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\css\fa-regular.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\css\fa-solid.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\css\fa-solid.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\css\fontawesome-all.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\css\fontawesome-all.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\css\fontawesome.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\css\fontawesome.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\fa-brands.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\fa-regular.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\fa-solid.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\fontawesome.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_animated.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_bordered-pulled.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_core.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_fixed-width.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_icons.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_larger.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_list.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_mixins.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_rotated-flipped.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_screen-reader.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_stacked.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\less\_variables.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\fa-brands.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\fa-regular.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\fa-solid.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\fontawesome.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_animated.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_bordered-pulled.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_core.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_fixed-width.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_icons.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_larger.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_list.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_mixins.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_rotated-flipped.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_screen-reader.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_stacked.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\scss\_variables.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-brands-400.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-brands-400.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-brands-400.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-brands-400.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-brands-400.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-regular-400.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-regular-400.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-regular-400.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-regular-400.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-regular-400.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-solid-900.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-solid-900.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-solid-900.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-solid-900.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\font-awesome\webfonts\fa-solid-900.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\simple-line-icons\css\simple-line-icons.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\simple-line-icons\less\simple-line-icons.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\simple-line-icons\scss\simple-line-icons.scss" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\themify-icons\fonts\themify.eot" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\themify-icons\fonts\themify.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\themify-icons\fonts\themify.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\themify-icons\fonts\themify.woff" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\themify-icons\ie7\ie7.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\themify-icons\ie7\ie7.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\themify-icons\themify-icons.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\icons\themify-icons\themify-icons.less" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\pandalocker.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\style.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\css\style.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\img\button-loader-f2f2f2.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\img\lock-icon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\img\social-icons.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\js\app-style-switcher.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\js\app-style-switcher.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\js\custom.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\js\custom.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\js\feather.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\js\jquery.ui.highlight.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\js\pandalocker.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\js\sidebarmenu.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\adminmart-lite\dist\js\sidebarmenu.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\signalr\signalr.js" />
+    <None Include="wwwroot\lib\signalr\signalr.js.map" />
+    <None Include="wwwroot\lib\signalr\signalr.min.js" />
+    <None Include="wwwroot\lib\signalr\signalr.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Home\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Shared\_Layout.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\LICENSE">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\additional-methods.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\additional-methods.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\jquery.validate.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\LICENSE.md">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\dist\jquery.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\dist\jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\dist\jquery.min.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\perfect-scrollbar\dist\css\perfect-scrollbar.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\perfect-scrollbar\dist\js\perfect-scrollbar.jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\perfect-scrollbar\dist\js\perfect-scrollbar.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\perfect-scrollbar\dist\perfect-scrollbar.common.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\perfect-scrollbar\dist\perfect-scrollbar.esm.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\perfect-scrollbar\dist\perfect-scrollbar.jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\perfect-scrollbar\dist\perfect-scrollbar.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
